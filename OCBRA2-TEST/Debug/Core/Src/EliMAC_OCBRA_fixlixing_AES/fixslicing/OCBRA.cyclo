@@ -1,0 +1,9 @@
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:109:6:OCB	5
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:223:6:PMAC	3
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:301:6:PMAC_1	4
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:381:6:add_nonce	2
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:388:6:xor_nonce	2
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:394:6:divide_plaintext	6
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:416:6:union_ciphertext	6
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:445:6:divide_key	2
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:454:6:print_array	5

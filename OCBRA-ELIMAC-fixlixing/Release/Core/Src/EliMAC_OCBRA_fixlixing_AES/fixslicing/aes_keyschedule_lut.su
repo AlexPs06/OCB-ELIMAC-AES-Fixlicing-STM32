@@ -1,0 +1,4 @@
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.c:66:6:aes128_keyschedule_ffs_lut	216	static
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.c:148:6:aes256_keyschedule_ffs_lut	280	static
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.c:250:6:aes128_keyschedule_sfs_lut	344	static
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.c:306:6:aes256_keyschedule_sfs_lut	336	static

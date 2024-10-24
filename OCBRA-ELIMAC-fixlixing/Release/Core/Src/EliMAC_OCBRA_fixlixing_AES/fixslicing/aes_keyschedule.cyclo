@@ -1,0 +1,7 @@
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.c:59:13:xor_columns	1
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.c:59:13:xor_columns.constprop	1
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.c:90:6:aes128_keyschedule_ffs	1
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.c:166:6:aes128_2rounds_keyschedule_ffs	1
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.c:236:6:aes256_keyschedule_ffs	1
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.c:309:6:aes128_keyschedule_sfs	1
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.c:376:6:aes256_keyschedule_sfs	1
