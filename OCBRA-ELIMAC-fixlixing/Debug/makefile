@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -11,7 +11,6 @@ RM := rm -rf
 -include sources.mk
 -include Drivers/STM32F7xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
--include Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
 
@@ -61,8 +60,8 @@ all: main-build
 main-build: OCBRA-ELIMAC-fixlixing.elf secondary-outputs
 
 # Tool invocations
-OCBRA-ELIMAC-fixlixing.elf OCBRA-ELIMAC-fixlixing.map: $(OBJS) $(USER_OBJS) /home/cinvestav171/Documents/trabajo_de_tesis/STM32_Fixlixing_OCB_ELIMAC/OCBRA-ELIMAC-fixlixing/STM32F756ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "OCBRA-ELIMAC-fixlixing.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/cinvestav171/Documents/trabajo_de_tesis/STM32_Fixlixing_OCB_ELIMAC/OCBRA-ELIMAC-fixlixing/STM32F756ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OCBRA-ELIMAC-fixlixing.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+OCBRA-ELIMAC-fixlixing.elf OCBRA-ELIMAC-fixlixing.map: $(OBJS) $(USER_OBJS) /home/cinvestav/Documentos/trabajo_de_tesis/STM32/OCB-ELIMAC-AES-Fixlicing-STM32/OCBRA-ELIMAC-fixlixing/STM32F756ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "OCBRA-ELIMAC-fixlixing.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/cinvestav/Documentos/trabajo_de_tesis/STM32/OCB-ELIMAC-AES-Fixlicing-STM32/OCBRA-ELIMAC-fixlixing/STM32F756ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OCBRA-ELIMAC-fixlixing.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -4,7 +4,7 @@
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c:2791:13:ETH_SetDMAConfig	1
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c:2720:13:ETH_FlushTransmitFIFO	1
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c:1308:13:HAL_ETH_RxAllocateCallback	1
-../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c:1194:13:ETH_UpdateDescriptor	8
+../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c:1194:13:ETH_UpdateDescriptor	7
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c:1427:13:HAL_ETH_TxFreeCallback	1
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c:454:13:HAL_ETH_MspInit	1
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c:335:19:HAL_ETH_Init	9

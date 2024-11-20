@@ -83,7 +83,7 @@ static void MX_USB_OTG_FS_PCD_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#define  REP 30
+#define  REP 100
 #define  Number_test 7
 #define  PLEN 2500
 #define  ROUNDS 6
@@ -185,6 +185,7 @@ int main(void)
 	  	  			for (i = 0; i < REP; i++) {
 	  	  				start_timer(); // Iniciar el contador de ciclos
 	  	  				OCB3(plaintext, ciphertext, nonce, asociated_data, 0, 12, bytes[j], key1, tag);
+
 	  	  				cycles = stop_timer(); // Detener el contador de ciclos y obtener el valor
 	  	  				total_cycles=cycles+total_cycles;
 	  	  			}

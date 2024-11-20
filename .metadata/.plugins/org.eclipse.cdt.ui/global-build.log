@@ -1,0 +1,14 @@
+16:25:07 **** Incremental Build of configuration Debug for project OCBRA2-TEST ****
+make -j8 all 
+arm-none-eabi-size  OCBRA2-TEST.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32864	    480	  17296	  50640	   c5d0	OCBRA2-TEST.elf
+Finished building: default.size.stdout
+ 
+16:25:28 **** Incremental Build of configuration Debug for project OCBRA2-TEST ****
+make -j8 all 
+arm-none-eabi-size  OCBRA2-TEST.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32864	    480	  17296	  50640	   c5d0	OCBRA2-TEST.elf
+Finished building: default.size.stdout
+ 

@@ -84,7 +84,7 @@ static void MX_USB_OTG_FS_PCD_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#define  REP 30
+#define  REP 100
 #define  Number_test 7
 #define  PLEN 2500
 #define  ROUNDS 6

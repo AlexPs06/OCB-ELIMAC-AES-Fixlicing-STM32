@@ -1,8 +1,3 @@
-"./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/ELIMAC.o"
-"./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.o"
-"./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o"
-"./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o"
-"./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o"
 "./Core/Src/Serial.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f7xx_hal_msp.o"
