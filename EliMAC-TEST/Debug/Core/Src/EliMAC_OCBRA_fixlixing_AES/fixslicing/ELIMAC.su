@@ -1,6 +1,0 @@
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/ELIMAC.c:24:6:ELIMAC	952	dynamic
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/ELIMAC.c:89:6:H	32	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/ELIMAC.c:112:6:I	32	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/ELIMAC.c:135:6:divide_plaintext	40	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/ELIMAC.c:156:6:add_nonce	32	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/ELIMAC.c:163:6:xor_nonce	32	static

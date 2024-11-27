@@ -1,5 +1,5 @@
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c:196:19:HAL_RCC_DeInit	13
-../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c:342:19:HAL_RCC_OscConfig	60
+../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c:342:19:HAL_RCC_OscConfig	59
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c:903:6:HAL_RCC_MCOConfig	2
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c:957:6:HAL_RCC_EnableCSS	1
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c:966:6:HAL_RCC_DisableCSS	1

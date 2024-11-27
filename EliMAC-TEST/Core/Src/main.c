@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2023 STMicroelectronics.
+  * Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "EliMAC_OCBRA_fixlixing_AES/fixslicing/ELIMAC.h"
+#include "EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.h"
 #include "Serial.h"
 /* USER CODE END Includes */
 
@@ -54,9 +54,9 @@ __attribute__((at(0x2004c000))) ETH_DMADescTypeDef  DMARxDscrTab[ETH_RX_DESC_CNT
 __attribute__((at(0x2004c0a0))) ETH_DMADescTypeDef  DMATxDscrTab[ETH_TX_DESC_CNT]; /* Ethernet Tx DMA Descriptors */
 
 #elif defined ( __GNUC__ ) /* GNU Compiler */
+
 ETH_DMADescTypeDef DMARxDscrTab[ETH_RX_DESC_CNT] __attribute__((section(".RxDecripSection"))); /* Ethernet Rx DMA Descriptors */
 ETH_DMADescTypeDef DMATxDscrTab[ETH_TX_DESC_CNT] __attribute__((section(".TxDecripSection")));   /* Ethernet Tx DMA Descriptors */
-
 #endif
 
 ETH_TxPacketConfig TxConfig;
@@ -134,6 +134,7 @@ void print_array_2(uint8_t * plaintext, uint8_t size){
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -160,53 +161,51 @@ int main(void)
   MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   /* USER CODE BEGIN 2 */
-
-
   for (size_t i = 0; i < plaintext_size; i++)
-  {
-	  plaintext[i] =i;
-	  asociated_data[i]=i;
-  }
+    {
+  	  plaintext[i] =i;
+  	  asociated_data[i]=i;
+    }
 
-  DWT_Init(); // Inicializar el contador de ciclos
-  uint32_t cycles=0;
-  uint32_t total_cycles=0;
+    DWT_Init(); // Inicializar el contador de ciclos
+    uint32_t cycles=0;
+    uint32_t total_cycles=0;
 
-  int i=0;
+    int i=0;
 
 
-  cycles=0;
-  total_cycles=0;
-  sprintf(buffer,"\n ELIMAC ROUNDS %i", ROUNDS+4);
-      serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
-      for (int j = 0; j < Number_test; j++) {
-          for (i = 0; i < REP; i++) {
-              start_timer(); // Iniciar el contador de ciclos
-              ELIMAC(plaintext, bytes[j], key1, key2, ROUNDS, tag);
-              cycles = stop_timer(); // Detener el contador de ciclos y obtener el valor
-              total_cycles=cycles+total_cycles;
-          }
-          performance[j] = total_cycles/REP;
-          total_cycles=0;
-      }
-      for (i = 0; i < Number_test; i++) {
-    	    sprintf(buffer,"\n bytes %u ", bytes[i]);
-    	    serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
-			sprintf(buffer, "\n %d:   cycle : %u  ", i, performance[i] );
-			serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
-	   }
+    cycles=0;
+    total_cycles=0;
+    sprintf(buffer,"\n ELIMAC ROUNDS %i", ROUNDS+4);
+        serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
+        for (int j = 0; j < Number_test; j++) {
+            for (i = 0; i < REP; i++) {
+                start_timer(); // Iniciar el contador de ciclos
+                ELIMAC(plaintext, bytes[j], key1, key2, ROUNDS, tag);
+                cycles = stop_timer(); // Detener el contador de ciclos y obtener el valor
+                total_cycles=cycles+total_cycles;
+            }
+            performance[j] = total_cycles/REP;
+            total_cycles=0;
+        }
+        for (i = 0; i < Number_test; i++) {
+      	    sprintf(buffer,"\n bytes %u ", bytes[i]);
+      	    serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
+  			sprintf(buffer, "\n %d:   cycle : %u  ", i, performance[i] );
+  			serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
+  	   }
 
-      for (size_t i = 0; i < plaintext_size; i++){
-    	   plaintext[i] =i;
-    	   asociated_data[i]=i;
-       }
-
+        for (size_t i = 0; i < plaintext_size; i++){
+      	   plaintext[i] =i;
+      	   asociated_data[i]=i;
+         }
 
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -1,0 +1,8 @@
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.c:19:6:ELIMAC	952	dynamic
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.c:87:6:H	32	static
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.c:110:6:I	32	static
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.c:133:6:add_nonce	32	static
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.c:140:6:xor_nonce	32	static
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.c:146:6:divide_plaintext	40	static
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.c:169:6:divide_key	32	static
+../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.c:178:6:print_array	24	static

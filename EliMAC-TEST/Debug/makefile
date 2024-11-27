@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := OCBRA-TEST
+BUILD_ARTIFACT_NAME := EliMAC-TEST
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-OCBRA-TEST.elf \
+EliMAC-TEST.elf \
 
 MAP_FILES += \
-OCBRA-TEST.map \
+EliMAC-TEST.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-OCBRA-TEST.list \
+EliMAC-TEST.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: OCBRA-TEST.elf secondary-outputs
+main-build: EliMAC-TEST.elf secondary-outputs
 
 # Tool invocations
-OCBRA-TEST.elf OCBRA-TEST.map: $(OBJS) $(USER_OBJS) /home/alexpsomen/Documentos/STM32OCB/OCBRA-TEST/STM32F756ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "OCBRA-TEST.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/alexpsomen/Documentos/STM32OCB/OCBRA-TEST/STM32F756ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OCBRA-TEST.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+EliMAC-TEST.elf EliMAC-TEST.map: $(OBJS) $(USER_OBJS) /home/cinvestav/Documentos/trabajo_de_tesis/STM32/OCB-ELIMAC-AES-Fixlicing-STM32/EliMAC-TEST/STM32F756ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "EliMAC-TEST.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/cinvestav/Documentos/trabajo_de_tesis/STM32/OCB-ELIMAC-AES-Fixlicing-STM32/EliMAC-TEST/STM32F756ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EliMAC-TEST.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,14 +71,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-OCBRA-TEST.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "OCBRA-TEST.list"
+EliMAC-TEST.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "EliMAC-TEST.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) OCBRA-TEST.elf OCBRA-TEST.list OCBRA-TEST.map default.size.stdout
+	-$(RM) EliMAC-TEST.elf EliMAC-TEST.list EliMAC-TEST.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

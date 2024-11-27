@@ -13,5 +13,5 @@
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c:534:19:HAL_FLASH_OB_Lock	0	static
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c:582:10:HAL_FLASH_GetError	0	static
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c:596:19:FLASH_WaitForLastOperation	16	static
-../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c:162:19:HAL_FLASH_Program	32	static
+../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c:162:19:HAL_FLASH_Program	24	static
 ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c:546:19:HAL_FLASH_OB_Launch	0	static
