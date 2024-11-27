@@ -11,7 +11,7 @@ RM := rm -rf
 -include sources.mk
 -include Drivers/STM32F7xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
--include Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/subdir.mk
+-include Core/Src/Ecrypt-Files/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
 

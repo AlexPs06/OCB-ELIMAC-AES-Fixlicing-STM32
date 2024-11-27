@@ -1,7 +1,7 @@
-14:36:46 **** Incremental Build of configuration Release for project OCB3-TEST ****
+14:39:53 **** Incremental Build of configuration Release for project OCBRA2-TEST ****
 make -j8 all 
-arm-none-eabi-size  OCB3-TEST.elf 
+arm-none-eabi-size  OCBRA2-TEST.elf 
    text	   data	    bss	    dec	    hex	filename
-  17828	    452	  17548	  35828	   8bf4	OCB3-TEST.elf
+  19032	    452	  17292	  36776	   8fa8	OCBRA2-TEST.elf
 Finished building: default.size.stdout
  

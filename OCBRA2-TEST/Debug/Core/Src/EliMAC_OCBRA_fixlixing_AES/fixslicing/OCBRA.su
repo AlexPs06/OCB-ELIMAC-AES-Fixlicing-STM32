@@ -1,9 +1,0 @@
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:22:6:OCB	1136	dynamic
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:138:6:PMAC	984	dynamic
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:216:6:PMAC_1	1000	dynamic
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:296:6:add_nonce	32	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:303:6:xor_nonce	32	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:309:6:divide_plaintext	40	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:331:6:union_ciphertext	40	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:360:6:divide_key	32	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCBRA.c:369:6:print_array	32	static

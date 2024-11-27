@@ -1,0 +1,9 @@
+../Core/Src/Ecrypt-Files/OCBRA.c:296:6:add_nonce	16	static
+../Core/Src/Ecrypt-Files/OCBRA.c:303:6:xor_nonce	8	static
+../Core/Src/Ecrypt-Files/OCBRA.c:309:6:divide_plaintext	20	static
+../Core/Src/Ecrypt-Files/OCBRA.c:138:6:PMAC	928	dynamic
+../Core/Src/Ecrypt-Files/OCBRA.c:216:6:PMAC_1	944	dynamic
+../Core/Src/Ecrypt-Files/OCBRA.c:331:6:union_ciphertext	20	static
+../Core/Src/Ecrypt-Files/OCBRA.c:360:6:divide_key	8	static
+../Core/Src/Ecrypt-Files/OCBRA.c:22:6:OCB	1048	dynamic
+../Core/Src/Ecrypt-Files/OCBRA.c:369:6:print_array	24	static
