@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.h"
+#include "Encrypt-Files/EliMAC.h"
 #include "Serial.h"
 /* USER CODE END Includes */
 

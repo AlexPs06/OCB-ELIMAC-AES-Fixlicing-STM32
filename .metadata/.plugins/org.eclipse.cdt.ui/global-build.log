@@ -1,11 +1,4 @@
-14:16:52 **** Incremental Build of configuration Release for project EliMAC-TEST ****
-make -j8 all 
-arm-none-eabi-size  EliMAC-TEST.elf 
-   text	   data	    bss	    dec	    hex	filename
-  19780	    456	   8784	  29020	   715c	EliMAC-TEST.elf
-Finished building: default.size.stdout
- 
-14:17:09 **** Incremental Build of configuration Release for project EliMAC-TEST ****
+14:33:12 **** Incremental Build of configuration Release for project EliMAC-TEST ****
 make -j8 all 
 arm-none-eabi-size  EliMAC-TEST.elf 
    text	   data	    bss	    dec	    hex	filename

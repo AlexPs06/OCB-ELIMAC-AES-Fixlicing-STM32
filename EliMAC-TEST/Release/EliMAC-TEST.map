@@ -7,9 +7,9 @@ Archive member included to satisfy reference by file (symbol)
 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-fwalk.o)
                               /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-findfp.o) (_fwalk_sglue)
 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-printf.o)
-                              ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o (printf)
+                              ./Core/Src/Encrypt-Files/EliMAC.o (printf)
 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-putchar.o)
-                              ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o (putchar)
+                              ./Core/Src/Encrypt-Files/EliMAC.o (putchar)
 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-sprintf.o)
                               ./Core/Src/main.o (sprintf)
 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-stdio.o)
@@ -101,53 +101,53 @@ Discarded input sections
  .ARM.exidx     0x00000000       0x10 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
  .ARM.attributes
                 0x00000000       0x20 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
- .text          0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
- .data          0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
- .bss           0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
- .text.I        0x00000000        0x4 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+ .text          0x00000000        0x0 ./Core/Src/Encrypt-Files/EliMAC.o
+ .data          0x00000000        0x0 ./Core/Src/Encrypt-Files/EliMAC.o
+ .bss           0x00000000        0x0 ./Core/Src/Encrypt-Files/EliMAC.o
+ .text.I        0x00000000        0x4 ./Core/Src/Encrypt-Files/EliMAC.o
  .text.divide_key
-                0x00000000       0x12 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
- .text          0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
- .data          0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
- .bss           0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x00000000       0x12 ./Core/Src/Encrypt-Files/EliMAC.o
+ .text          0x00000000        0x0 ./Core/Src/Encrypt-Files/aes_encrypt.o
+ .data          0x00000000        0x0 ./Core/Src/Encrypt-Files/aes_encrypt.o
+ .bss           0x00000000        0x0 ./Core/Src/Encrypt-Files/aes_encrypt.o
  .rodata.imprimiArreglo.str1.1
-                0x00000000        0x6 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x00000000        0x6 ./Core/Src/Encrypt-Files/aes_encrypt.o
  .text.imprimiArreglo
-                0x00000000       0x2c ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x00000000       0x2c ./Core/Src/Encrypt-Files/aes_encrypt.o
  .text.aes256_encrypt_ffs
-                0x00000000       0xa6 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x00000000       0xa6 ./Core/Src/Encrypt-Files/aes_encrypt.o
  .text.aes128_encrypt_sfs
-                0x00000000       0x6c ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x00000000       0x6c ./Core/Src/Encrypt-Files/aes_encrypt.o
  .text.aes256_encrypt_sfs
-                0x00000000       0x6c ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
- .text          0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
- .data          0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
- .bss           0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x00000000       0x6c ./Core/Src/Encrypt-Files/aes_encrypt.o
+ .text          0x00000000        0x0 ./Core/Src/Encrypt-Files/aes_keyschedule.o
+ .data          0x00000000        0x0 ./Core/Src/Encrypt-Files/aes_keyschedule.o
+ .bss           0x00000000        0x0 ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .text.aes128_2rounds_keyschedule_ffs
-                0x00000000       0xb8 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x00000000       0xb8 ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .text.aes256_keyschedule_ffs
-                0x00000000      0x2d0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x00000000      0x2d0 ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .text.aes128_keyschedule_sfs
-                0x00000000      0x27e ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x00000000      0x27e ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .text.aes256_keyschedule_sfs
-                0x00000000      0x2b4 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
- .text          0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
- .data          0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
- .bss           0x00000000        0x0 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
+                0x00000000      0x2b4 ./Core/Src/Encrypt-Files/aes_keyschedule.o
+ .text          0x00000000        0x0 ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
+ .data          0x00000000        0x0 ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
+ .bss           0x00000000        0x0 ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
  .text.aes128_keyschedule_ffs_lut
-                0x00000000      0x218 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
+                0x00000000      0x218 ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
  .text.aes256_keyschedule_ffs_lut
-                0x00000000      0x2b4 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
+                0x00000000      0x2b4 ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
  .text.aes128_keyschedule_sfs_lut
-                0x00000000      0x174 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
+                0x00000000      0x174 ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
  .text.aes256_keyschedule_sfs_lut
-                0x00000000      0x20c ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
- .rodata.rcon   0x00000000        0xb ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
+                0x00000000      0x20c ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
+ .rodata.rcon   0x00000000        0xb ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
  .rodata.sbox_lut
-                0x00000000      0x100 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
- .comment       0x00000000       0x44 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
+                0x00000000      0x100 ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
+ .comment       0x00000000       0x44 ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
  .ARM.attributes
-                0x00000000       0x34 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
+                0x00000000       0x34 ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
  .text          0x00000000        0x0 ./Core/Src/Serial.o
  .data          0x00000000        0x0 ./Core/Src/Serial.o
  .bss           0x00000000        0x0 ./Core/Src/Serial.o
@@ -1362,10 +1362,10 @@ Linker script and memory map
 LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
 LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
-LOAD ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
-LOAD ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
-LOAD ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
-LOAD ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule_lut.o
+LOAD ./Core/Src/Encrypt-Files/EliMAC.o
+LOAD ./Core/Src/Encrypt-Files/aes_encrypt.o
+LOAD ./Core/Src/Encrypt-Files/aes_keyschedule.o
+LOAD ./Core/Src/Encrypt-Files/aes_keyschedule_lut.o
 LOAD ./Core/Src/Serial.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/stm32f7xx_hal_msp.o
@@ -1441,65 +1441,65 @@ LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.
                 0x0800059c                __aeabi_ldiv0
                 0x0800059c                __aeabi_idiv0
  *(.text*)
- .text.H        0x080005a0       0x46 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+ .text.H        0x080005a0       0x46 ./Core/Src/Encrypt-Files/EliMAC.o
                 0x080005a0                H
  .text.add_nonce
-                0x080005e6       0x1c ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+                0x080005e6       0x1c ./Core/Src/Encrypt-Files/EliMAC.o
                 0x080005e6                add_nonce
  .text.xor_nonce
-                0x08000602       0x1a ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+                0x08000602       0x1a ./Core/Src/Encrypt-Files/EliMAC.o
                 0x08000602                xor_nonce
  .text.divide_plaintext
-                0x0800061c       0x34 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+                0x0800061c       0x34 ./Core/Src/Encrypt-Files/EliMAC.o
                 0x0800061c                divide_plaintext
  .text.print_array
-                0x08000650       0x28 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+                0x08000650       0x28 ./Core/Src/Encrypt-Files/EliMAC.o
                 0x08000650                print_array
- .text.ELIMAC   0x08000678      0x1f8 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+ .text.ELIMAC   0x08000678      0x1f8 ./Core/Src/Encrypt-Files/EliMAC.o
                 0x08000678                ELIMAC
  .text.unpacking
-                0x08000870      0x178 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
- .text.ark      0x080009e8       0x1c ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x08000870      0x178 ./Core/Src/Encrypt-Files/aes_encrypt.o
+ .text.ark      0x080009e8       0x1c ./Core/Src/Encrypt-Files/aes_encrypt.o
  .text.double_shiftrows
-                0x08000a04       0x20 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x08000a04       0x20 ./Core/Src/Encrypt-Files/aes_encrypt.o
  .text.mixcolumns_0
-                0x08000a24      0x16a ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x08000a24      0x16a ./Core/Src/Encrypt-Files/aes_encrypt.o
  .text.mixcolumns_1
-                0x08000b8e       0xfa ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x08000b8e       0xfa ./Core/Src/Encrypt-Files/aes_encrypt.o
  .text.mixcolumns_2
-                0x08000c88      0x16a ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x08000c88      0x16a ./Core/Src/Encrypt-Files/aes_encrypt.o
  .text.mixcolumns_3
-                0x08000df2       0x8a ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
- .text.packing  0x08000e7c       0xf6 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x08000df2       0x8a ./Core/Src/Encrypt-Files/aes_encrypt.o
+ .text.packing  0x08000e7c       0xf6 ./Core/Src/Encrypt-Files/aes_encrypt.o
                 0x08000e7c                packing
- .text.sbox     0x08000f72      0x212 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+ .text.sbox     0x08000f72      0x212 ./Core/Src/Encrypt-Files/aes_encrypt.o
                 0x08000f72                sbox
  .text.aes128_encrypt_ffs
-                0x08001184       0xde ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x08001184       0xde ./Core/Src/Encrypt-Files/aes_encrypt.o
                 0x08001184                aes128_encrypt_ffs
  .text.two_Rounds_aes128_encrypt_ffs
-                0x08001262       0x52 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x08001262       0x52 ./Core/Src/Encrypt-Files/aes_encrypt.o
                 0x08001262                two_Rounds_aes128_encrypt_ffs
  .text.four_Rounds_aes128_encrypt_ffs
-                0x080012b4       0x70 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x080012b4       0x70 ./Core/Src/Encrypt-Files/aes_encrypt.o
                 0x080012b4                four_Rounds_aes128_encrypt_ffs
  .text.six_Rounds_aes128_encrypt_ffs
-                0x08001324       0x9a ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x08001324       0x9a ./Core/Src/Encrypt-Files/aes_encrypt.o
                 0x08001324                six_Rounds_aes128_encrypt_ffs
  .text.eigth_Rounds_aes128_encrypt_ffs
-                0x080013be       0xb8 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x080013be       0xb8 ./Core/Src/Encrypt-Files/aes_encrypt.o
                 0x080013be                eigth_Rounds_aes128_encrypt_ffs
  *fill*         0x08001476        0x2 
  .text.inv_shiftrows_1
-                0x08001478       0x38 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x08001478       0x38 ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .text.inv_shiftrows_2
-                0x080014b0       0x20 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x080014b0       0x20 ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .text.inv_shiftrows_3
-                0x080014d0       0x38 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x080014d0       0x38 ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .text.xor_columns
-                0x08001508       0x78 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x08001508       0x78 ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .text.aes128_keyschedule_ffs
-                0x08001580      0x28e ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x08001580      0x28e ./Core/Src/Encrypt-Files/aes_keyschedule.o
                 0x08001580                aes128_keyschedule_ffs
  .text.serial_printf
                 0x0800180e       0x14 ./Core/Src/Serial.o
@@ -1960,10 +1960,10 @@ LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.
 .rodata         0x08004c68       0xd4
                 0x08004c68                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08004c68       0x30 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+ .rodata        0x08004c68       0x30 ./Core/Src/Encrypt-Files/EliMAC.o
  *(.rodata*)
  .rodata.print_array.str1.1
-                0x08004c98        0x6 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+                0x08004c98        0x6 ./Core/Src/Encrypt-Files/EliMAC.o
  .rodata.main.str1.1
                 0x08004c9e       0x34 ./Core/Src/main.o
  *fill*         0x08004cd2        0x2 
@@ -2152,11 +2152,11 @@ LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.
  .ARM.attributes
                 0x00000022       0x34 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  .ARM.attributes
-                0x00000056       0x34 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+                0x00000056       0x34 ./Core/Src/Encrypt-Files/EliMAC.o
  .ARM.attributes
-                0x0000008a       0x34 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
+                0x0000008a       0x34 ./Core/Src/Encrypt-Files/aes_encrypt.o
  .ARM.attributes
-                0x000000be       0x34 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+                0x000000be       0x34 ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .ARM.attributes
                 0x000000f2       0x34 ./Core/Src/Serial.o
  .ARM.attributes
@@ -2280,10 +2280,10 @@ LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.
 LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a
 
 .comment        0x00000000       0x43
- .comment       0x00000000       0x43 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/EliMAC.o
+ .comment       0x00000000       0x43 ./Core/Src/Encrypt-Files/EliMAC.o
                                  0x44 (size before relaxing)
- .comment       0x00000043       0x44 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_encrypt.o
- .comment       0x00000043       0x44 ./Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/aes_keyschedule.o
+ .comment       0x00000043       0x44 ./Core/Src/Encrypt-Files/aes_encrypt.o
+ .comment       0x00000043       0x44 ./Core/Src/Encrypt-Files/aes_keyschedule.o
  .comment       0x00000043       0x44 ./Core/Src/Serial.o
  .comment       0x00000043       0x44 ./Core/Src/main.o
  .comment       0x00000043       0x44 ./Core/Src/stm32f7xx_hal_msp.o

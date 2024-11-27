@@ -1,0 +1,10 @@
+../Core/Src/Encrypt-Files/aes_keyschedule.c:22:13:inv_shiftrows_1	2
+../Core/Src/Encrypt-Files/aes_keyschedule.c:32:13:inv_shiftrows_2	2
+../Core/Src/Encrypt-Files/aes_keyschedule.c:41:13:inv_shiftrows_3	2
+../Core/Src/Encrypt-Files/aes_keyschedule.c:59:13:xor_columns	2
+../Core/Src/Encrypt-Files/aes_keyschedule.c:72:13:xor_columns_0	2
+../Core/Src/Encrypt-Files/aes_keyschedule.c:90:6:aes128_keyschedule_ffs	2
+../Core/Src/Encrypt-Files/aes_keyschedule.c:166:6:aes128_2rounds_keyschedule_ffs	2
+../Core/Src/Encrypt-Files/aes_keyschedule.c:236:6:aes256_keyschedule_ffs	2
+../Core/Src/Encrypt-Files/aes_keyschedule.c:309:6:aes128_keyschedule_sfs	2
+../Core/Src/Encrypt-Files/aes_keyschedule.c:376:6:aes256_keyschedule_sfs	2
