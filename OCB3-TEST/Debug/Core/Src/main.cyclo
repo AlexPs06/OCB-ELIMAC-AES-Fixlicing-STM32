@@ -3,9 +3,9 @@
 ../Core/Src/main.c:114:10:stop_timer	1
 ../Core/Src/main.c:118:6:print_array_2	2
 ../Core/Src/main.c:135:5:main	13
-../Core/Src/main.c:272:6:SystemClock_Config	3
-../Core/Src/main.c:322:13:MX_ETH_Init	2
-../Core/Src/main.c:371:13:MX_USART3_UART_Init	2
-../Core/Src/main.c:406:13:MX_USB_OTG_FS_PCD_Init	2
-../Core/Src/main.c:441:13:MX_GPIO_Init	1
-../Core/Src/main.c:499:6:Error_Handler	1
+../Core/Src/main.c:271:6:SystemClock_Config	3
+../Core/Src/main.c:321:13:MX_ETH_Init	2
+../Core/Src/main.c:370:13:MX_USART3_UART_Init	2
+../Core/Src/main.c:405:13:MX_USB_OTG_FS_PCD_Init	2
+../Core/Src/main.c:440:13:MX_GPIO_Init	1
+../Core/Src/main.c:498:6:Error_Handler	1

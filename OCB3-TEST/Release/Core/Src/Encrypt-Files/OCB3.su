@@ -1,0 +1,9 @@
+../Core/Src/Encrypt-Files/OCB3.c:39:6:array_copy	8	static
+../Core/Src/Encrypt-Files/OCB3.c:45:6:mult_by_2	12	static
+../Core/Src/Encrypt-Files/OCB3.c:15:6:OCB3_INIT	424	static
+../Core/Src/Encrypt-Files/OCB3.c:59:6:xor_block_u8	8	static
+../Core/Src/Encrypt-Files/OCB3.c:66:6:u8_to_u32	20	static
+../Core/Src/Encrypt-Files/OCB3.c:279:6:divide_plaintext	20	static
+../Core/Src/Encrypt-Files/OCB3.c:190:6:PMAC_OCB3	512	dynamic
+../Core/Src/Encrypt-Files/OCB3.c:84:6:OCB3	512	dynamic
+../Core/Src/Encrypt-Files/OCB3.c:301:6:union_ciphertext	20	static

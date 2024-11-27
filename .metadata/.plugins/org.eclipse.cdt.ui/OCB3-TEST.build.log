@@ -1,4 +1,4 @@
-11:28:47 **** Incremental Build of configuration Release for project OCB3-TEST ****
+14:36:46 **** Incremental Build of configuration Release for project OCB3-TEST ****
 make -j8 all 
 arm-none-eabi-size  OCB3-TEST.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  OCB3-TEST.elf
 Finished building: default.size.stdout
  
 
-11:28:47 Build Finished. 0 errors, 0 warnings. (took 222ms)
+14:36:47 Build Finished. 0 errors, 0 warnings. (took 290ms)
 

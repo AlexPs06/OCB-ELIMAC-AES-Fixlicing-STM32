@@ -1,9 +1,0 @@
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCB3.c:15:6:OCB3_INIT	440	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCB3.c:39:6:array_copy	32	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCB3.c:45:6:mult_by_2	24	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCB3.c:59:6:xor_block_u8	24	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCB3.c:66:6:u8_to_u32	24	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCB3.c:84:6:OCB3	32	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCB3.c:190:6:PMAC_OCB3	120	dynamic
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCB3.c:277:6:divide_plaintext	40	static
-../Core/Src/EliMAC_OCBRA_fixlixing_AES/fixslicing/OCB3.c:299:6:union_ciphertext	40	static

@@ -1,7 +1,7 @@
-14:33:12 **** Incremental Build of configuration Release for project EliMAC-TEST ****
+14:36:46 **** Incremental Build of configuration Release for project OCB3-TEST ****
 make -j8 all 
-arm-none-eabi-size  EliMAC-TEST.elf 
+arm-none-eabi-size  OCB3-TEST.elf 
    text	   data	    bss	    dec	    hex	filename
-  19780	    456	   8784	  29020	   715c	EliMAC-TEST.elf
+  17828	    452	  17548	  35828	   8bf4	OCB3-TEST.elf
 Finished building: default.size.stdout
  
