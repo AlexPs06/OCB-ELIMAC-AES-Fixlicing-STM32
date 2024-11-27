@@ -225,7 +225,6 @@ int main(void)
 	  			serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
 	  	   }
 
-
 	  	for (size_t i = 0; i < plaintext_size; i++)
 	  			{
 	  			  plaintext[i] =i;
