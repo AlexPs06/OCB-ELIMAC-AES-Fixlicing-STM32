@@ -1,0 +1,8 @@
+../Core/Src/Encrypt-Files/EliMAC.c:28:6:ELIMAC	952	dynamic
+../Core/Src/Encrypt-Files/EliMAC.c:98:6:H	32	static
+../Core/Src/Encrypt-Files/EliMAC.c:121:6:I	32	static
+../Core/Src/Encrypt-Files/EliMAC.c:144:6:add_nonce	32	static
+../Core/Src/Encrypt-Files/EliMAC.c:151:6:xor_nonce	32	static
+../Core/Src/Encrypt-Files/EliMAC.c:157:6:divide_plaintext	40	static
+../Core/Src/Encrypt-Files/EliMAC.c:180:6:divide_key	32	static
+../Core/Src/Encrypt-Files/EliMAC.c:189:6:print_array	24	static
