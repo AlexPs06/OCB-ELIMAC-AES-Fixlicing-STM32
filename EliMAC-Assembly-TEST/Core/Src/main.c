@@ -167,17 +167,17 @@ int main(void)
   	  plaintext[i] =i;
   	  asociated_data[i]=i;
     }
-
-    print_array_2(plaintext, 16);
+/*
+    print_array_2(plaintext, 32);
   	ELIMAC(plaintext, 32, key1, key2, ROUNDS, tag);
-  	print_array_2(tag, 16);
+  	print_array_2(tag, 32);
 
   	sprintf(buffer,"\n bytes %u ", 32);
 
-  	serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
+  	serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);*/
 
 
-  	/*
+
     DWT_Init(); // Inicializar el contador de ciclos
     uint32_t cycles=0;
     uint32_t total_cycles=0;
@@ -209,7 +209,7 @@ int main(void)
         for (size_t i = 0; i < plaintext_size; i++){
       	   plaintext[i] =i;
       	   asociated_data[i]=i;
-         }*/
+         }
 
 
   /* USER CODE END 2 */

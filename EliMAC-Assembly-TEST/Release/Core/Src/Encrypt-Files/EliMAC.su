@@ -1,8 +1,8 @@
-../Core/Src/Encrypt-Files/EliMAC.c:98:6:H	16	static
-../Core/Src/Encrypt-Files/EliMAC.c:121:6:I	0	static
-../Core/Src/Encrypt-Files/EliMAC.c:144:6:add_nonce	16	static
-../Core/Src/Encrypt-Files/EliMAC.c:151:6:xor_nonce	8	static
-../Core/Src/Encrypt-Files/EliMAC.c:157:6:divide_plaintext	20	static
-../Core/Src/Encrypt-Files/EliMAC.c:28:6:ELIMAC	752	dynamic
-../Core/Src/Encrypt-Files/EliMAC.c:180:6:divide_key	8	static
-../Core/Src/Encrypt-Files/EliMAC.c:189:6:print_array	24	static
+../Core/Src/Encrypt-Files/EliMAC.c:97:6:H	104	static
+../Core/Src/Encrypt-Files/EliMAC.c:137:6:I	0	static
+../Core/Src/Encrypt-Files/EliMAC.c:178:6:add_nonce	16	static
+../Core/Src/Encrypt-Files/EliMAC.c:185:6:xor_nonce	8	static
+../Core/Src/Encrypt-Files/EliMAC.c:191:6:divide_plaintext	20	static
+../Core/Src/Encrypt-Files/EliMAC.c:29:6:ELIMAC	904	dynamic
+../Core/Src/Encrypt-Files/EliMAC.c:214:6:divide_key	8	static
+../Core/Src/Encrypt-Files/EliMAC.c:223:6:print_array	24	static

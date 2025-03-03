@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 //#include "aes.h"
 #include "internal-aes.h"
 
@@ -64,9 +65,7 @@ void ELIMAC(unsigned char* plaintext,  const unsigned char plaintext_size, unsig
     int block_size = plaintext_size/32;
 
 
-    two_Rounds_aes128_encrypt_ffs(tag, tag+16, ptext0, ptext1, rkeys_ffs_H);
-    //four_Rounds_aes128_encrypt_ffs(tag, tag+16, ptext0, ptext1, rkeys_ffs_H);
-    /*
+
     for (int i = 0; i < block_size; i++){
 
         add_nonce(add_nonce_0, (unsigned int *)i_n1,(unsigned int *)i_n1_t, 4);
@@ -91,22 +90,39 @@ void ELIMAC(unsigned char* plaintext,  const unsigned char plaintext_size, unsig
     xor_nonce( S1,S2, 16);
 
 
-    aes128_encrypt_ffs(tag, S2, S1,S1, rkeys_ffs);*/
+    aes128_encrypt_ffs(tag, S2, S1,S1, rkeys_ffs);
 
 }
 
 void H(unsigned char* ptext0,  unsigned char *ptext1, uint32_t *rkeys_ffs_H, unsigned char rounds){
-
+	 unsigned char temp_0[16]={0};
+	 unsigned char temp_1[16]={0};
+	 //exclusive only if use 2 or 6 rounds
+	 unsigned char shift_0[16]={0,9,2,11,4,13,6,7,8,1,10,3,12,5,14,15};
+	 unsigned char shift_1[16]={0,9,2,11,4,13,6,15,8,1,10,3,12,5,14,7};
     switch (rounds)
     {
     case 2:
+
         two_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        memcpy(temp_0, ptext0, sizeof(unsigned char)*16);
+        memcpy(temp_1, ptext1, sizeof(unsigned char)*16);
+        for (size_t i = 0; i < 16; ++i) {
+        	ptext0[i]=temp_0[shift_0[i]];
+        	ptext1[i]=temp_1[shift_1[i]];
+        }
         break;
     case 4:
         four_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
         break;
     case 6:
         six_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        memcpy(shift_0, ptext0, sizeof(unsigned char)*16);
+		memcpy(shift_1, ptext1, sizeof(unsigned char)*16);
+		for (size_t i = 0; i < 16; ++i) {
+			ptext0[i]=temp_0[shift_0[i]];
+			ptext1[i]=temp_1[shift_1[i]];
+		}
         break;
     case 8:
         eigth_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
@@ -120,24 +136,42 @@ void H(unsigned char* ptext0,  unsigned char *ptext1, uint32_t *rkeys_ffs_H, uns
 
 void I(unsigned char* ptext0,  unsigned char *ptext1, uint32_t *rkeys_ffs_H, unsigned char rounds){
 
-    switch (rounds)
-    {
-    case 2:
-        two_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
-        break;
-    case 4:
-        four_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
-        break;
-    case 6:
-        six_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
-        break;
-    case 8:
-        eigth_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
-        break;
+   unsigned char temp_0[16]={0};
+   unsigned char temp_1[16]={0};
+   //exclusive only if use 2 or 6 rounds
+   unsigned char shift_0[16]={0,9,2,11,4,13,6,7,8,1,10,3,12,5,14,15};
+   unsigned char shift_1[16]={0,9,2,11,4,13,6,15,8,1,10,3,12,5,14,7};
+   switch (rounds)
+   {
+   case 2:
 
-    default:
-        break;
-    }
+       two_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+       memcpy(temp_0, ptext0, sizeof(unsigned char)*16);
+       memcpy(temp_1, ptext1, sizeof(unsigned char)*16);
+       for (size_t i = 0; i < 16; ++i) {
+       	ptext0[i]=temp_0[shift_0[i]];
+       	ptext1[i]=temp_1[shift_1[i]];
+       }
+       break;
+   case 4:
+       four_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+       break;
+   case 6:
+       six_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+       memcpy(shift_0, ptext0, sizeof(unsigned char)*16);
+		memcpy(shift_1, ptext1, sizeof(unsigned char)*16);
+		for (size_t i = 0; i < 16; ++i) {
+			ptext0[i]=temp_0[shift_0[i]];
+			ptext1[i]=temp_1[shift_1[i]];
+		}
+       break;
+   case 8:
+       eigth_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+       break;
+
+   default:
+       break;
+   }
 
 }
 

@@ -638,7 +638,7 @@ two_Rounds_aes128_encrypt_ffs:
     bl      ark_sbox                // ark + sbox (round 8)
     bl      mixcolumns_0            // mixcolumns (round 8)
     bl      ark_sbox                // ark + sbox (round 9)*/
-    bl      double_shiftrows_change        // to resynchronize with the classical rep
+    //bl      double_shiftrows_change        // to resynchronize with the classical rep
     /*ldr     r14, [sp, #48]          // ---------------------------------------
     ldmia   r14!, {r4,r5,r10,r12}   //
     eor     r4, r1                  //
@@ -762,6 +762,7 @@ six_Rounds_aes128_encrypt_ffs:
     bl      mixcolumns_0            // mixcolumns (round 4)
     bl      ark_sbox                // ark + sbox (round 5)
     bl      mixcolumns_1            // mixcolumns (round 5)
+    bl      ark                		// ark + sbox (round 2)
     bl      double_shiftrows        // to resynchronize with the classical rep
     bl      unpacking               // unpack the internal state
     ldrd    r0, r1, [sp, #56]       // restore the addr to store the ciphertext
