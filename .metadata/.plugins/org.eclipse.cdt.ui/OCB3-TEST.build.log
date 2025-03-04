@@ -1,10 +1,318 @@
-14:36:46 **** Incremental Build of configuration Release for project OCB3-TEST ****
+17:22:16 **** Incremental Build of configuration Release for project OCB3-TEST ****
 make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f756zgtx.d" -MT"Core/Startup/startup_stm32f756zgtx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f756zgtx.o" "../Core/Startup/startup_stm32f756zgtx.s"
+arm-none-eabi-gcc "../Core/Src/Encrypt-Files/OCB3.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Encrypt-Files/OCB3.d" -MT"Core/Src/Encrypt-Files/OCB3.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Encrypt-Files/OCB3.o"
+arm-none-eabi-gcc "../Core/Src/Encrypt-Files/aes_encrypt.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Encrypt-Files/aes_encrypt.d" -MT"Core/Src/Encrypt-Files/aes_encrypt.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Encrypt-Files/aes_encrypt.o"
+arm-none-eabi-gcc "../Core/Src/Encrypt-Files/aes_keyschedule.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Encrypt-Files/aes_keyschedule.d" -MT"Core/Src/Encrypt-Files/aes_keyschedule.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Encrypt-Files/aes_keyschedule.o"
+arm-none-eabi-gcc "../Core/Src/Encrypt-Files/aes_keyschedule_lut.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Encrypt-Files/aes_keyschedule_lut.d" -MT"Core/Src/Encrypt-Files/aes_keyschedule_lut.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Encrypt-Files/aes_keyschedule_lut.o"
+../Core/Src/Encrypt-Files/aes_encrypt.c:382:40: warning: argument 1 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  382 | void aes128_encrypt_ffs(unsigned char* ctext0, unsigned char * ctext1,
+      |                         ~~~~~~~~~~~~~~~^~~~~~
+In file included from ../Core/Src/Encrypt-Files/aes_encrypt.c:13:
+../Core/Src/Encrypt-Files/aes.h:7:39: note: previously declared as an array 'unsigned char[16]'
+    7 | void aes128_encrypt_ffs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                         ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:382:64: warning: argument 2 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  382 | void aes128_encrypt_ffs(unsigned char* ctext0, unsigned char * ctext1,
+      |                                                ~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:7:65: note: previously declared as an array 'unsigned char[16]'
+    7 | void aes128_encrypt_ffs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                                                   ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:383:62: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  383 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:8:53: note: previously declared as an array 'const unsigned char[16]'
+arm-none-eabi-gcc "../Core/Src/Serial.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Serial.d" -MT"Core/Src/Serial.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Serial.o"
+    8 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:383:91: warning: argument 4 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  383 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:8:85: note: previously declared as an array 'const unsigned char[16]'
+    8 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:384:57: warning: argument 5 of type 'const uint32_t *' {aka 'const long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  384 |                                         const uint32_t* rkeys_ffs) {
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes.h:9:48: note: previously declared as an array 'const uint32_t[88]' {aka 'const long unsigned int[88]'}
+    9 |                                 const uint32_t rkeys[88]);
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:429:40: warning: argument 1 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  429 | void aes256_encrypt_ffs(unsigned char* ctext0, unsigned char * ctext1,
+      |                         ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:10:39: note: previously declared as an array 'unsigned char[16]'
+   10 | void aes256_encrypt_ffs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                         ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:429:64: warning: argument 2 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  429 | void aes256_encrypt_ffs(unsigned char* ctext0, unsigned char * ctext1,
+      |                                                ~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:10:65: note: previously declared as an array 'unsigned char[16]'
+   10 | void aes256_encrypt_ffs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                                                   ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:430:62: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  430 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:11:53: note: previously declared as an array 'const unsigned char[16]'
+   11 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:430:91: warning: argument 4 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  430 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+      |                                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:11:85: note: previously declared as an array 'const unsigned char[16]'
+   11 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:431:57: warning: argument 5 of type 'const uint32_t *' {aka 'const long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  431 |                                         const uint32_t* rkeys_ffs) {
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes.h:12:48: note: previously declared as an array 'const uint32_t[120]' {aka 'const long unsigned int[120]'}
+   12 |                                 const uint32_t rkeys[120]);
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:466:40: warning: argument 1 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  466 | void aes128_encrypt_sfs(unsigned char* ctext0, unsigned char* ctext1,
+      |                         ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:15:39: note: previously declared as an array 'unsigned char[16]'
+   15 | void aes128_encrypt_sfs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                         ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:466:63: warning: argument 2 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  466 | void aes128_encrypt_sfs(unsigned char* ctext0, unsigned char* ctext1,
+      |                                                ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:15:65: note: previously declared as an array 'unsigned char[16]'
+   15 | void aes128_encrypt_sfs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                                                   ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:467:62: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  467 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:16:53: note: previously declared as an array 'const unsigned char[16]'
+   16 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:467:91: warning: argument 4 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  467 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:16:85: note: previously declared as an array 'const unsigned char[16]'
+   16 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:468:57: warning: argument 5 of type 'const uint32_t *' {aka 'const long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  468 |                                         const uint32_t* rkeys_sfs) {
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes.h:17:48: note: previously declared as an array 'const uint32_t[88]' {aka 'const long unsigned int[88]'}
+   17 |                                 const uint32_t rkeys[88]);
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:493:40: warning: argument 1 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  493 | void aes256_encrypt_sfs(unsigned char* ctext0, unsigned char* ctext1,
+      |                         ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:18:39: note: previously declared as an array 'unsigned char[16]'
+   18 | void aes256_encrypt_sfs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                         ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:493:63: warning: argument 2 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  493 | void aes256_encrypt_sfs(unsigned char* ctext0, unsigned char* ctext1,
+      |                                                ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:18:65: note: previously declared as an array 'unsigned char[16]'
+   18 | void aes256_encrypt_sfs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                                                   ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:494:62: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  494 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:19:53: note: previously declared as an array 'const unsigned char[16]'
+   19 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:494:91: warning: argument 4 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  494 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Encrypt-Files/aes.h:19:85: note: previously declared as an array 'const unsigned char[16]'
+   19 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_encrypt.c:495:57: warning: argument 5 of type 'const uint32_t *' {aka 'const long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  495 |                                         const uint32_t* rkeys_sfs) {
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes.h:20:48: note: previously declared as an array 'const uint32_t[120]' {aka 'const long unsigned int[120]'}
+   20 |                                 const uint32_t rkeys[120]);
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:91:39: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+   91 | void aes128_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                             ~~~~~~~~~~^~~~~
+In file included from ../Core/Src/Encrypt-Files/aes_keyschedule.c:14:
+../Core/Src/Encrypt-Files/aes.h:23:38: note: previously declared as an array 'uint32_t[88]' {aka 'long unsigned int[88]'}
+   23 | void aes128_keyschedule_ffs(uint32_t rkeys[88], const unsigned char key0[16],
+      |                             ~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:91:67: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+   91 | void aes128_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:23:69: note: previously declared as an array 'const unsigned char[16]'
+   23 | void aes128_keyschedule_ffs(uint32_t rkeys[88], const unsigned char key0[16],
+      |                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:92:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+   92 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:24:53: note: previously declared as an array 'const unsigned char[16]'
+   24 |                                 const unsigned char key1[16]);
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:167:47: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  167 | void aes128_2rounds_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                                     ~~~~~~~~~~^~~~~
+../Core/Src/Encrypt-Files/aes.h:53:46: note: previously declared as an array 'uint32_t[64]' {aka 'long unsigned int[64]'}
+   53 | void aes128_2rounds_keyschedule_ffs(uint32_t rkeys[64], const unsigned char key0[32],
+      |                                     ~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:167:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  167 | void aes128_2rounds_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:53:77: note: previously declared as an array 'const unsigned char[32]'
+   53 | void aes128_2rounds_keyschedule_ffs(uint32_t rkeys[64], const unsigned char key0[32],
+      |                                                         ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:168:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  168 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:54:69: note: previously declared as an array 'const unsigned char[32]'
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+   54 |                                                 const unsigned char key1[32]);
+      |                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:237:39: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  237 | void aes256_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                             ~~~~~~~~~~^~~~~
+../Core/Src/Encrypt-Files/aes.h:25:38: note: previously declared as an array 'uint32_t[120]' {aka 'long unsigned int[120]'}
+   25 | void aes256_keyschedule_ffs(uint32_t rkeys[120], const unsigned char key0[32],
+      |                             ~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:237:67: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  237 | void aes256_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:25:70: note: previously declared as an array 'const unsigned char[32]'
+   25 | void aes256_keyschedule_ffs(uint32_t rkeys[120], const unsigned char key0[32],
+      |                                                  ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:238:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  238 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:26:53: note: previously declared as an array 'const unsigned char[32]'
+   26 |                                 const unsigned char key1[32]);
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:310:39: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  310 | void aes128_keyschedule_sfs(uint32_t* rkeys, const unsigned char* key0,
+      |                             ~~~~~~~~~~^~~~~
+../Core/Src/Encrypt-Files/aes.h:29:38: note: previously declared as an array 'uint32_t[88]' {aka 'long unsigned int[88]'}
+   29 | void aes128_keyschedule_sfs(uint32_t rkeys[88], const unsigned char key0[16],
+      |                             ~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:310:67: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  310 | void aes128_keyschedule_sfs(uint32_t* rkeys, const unsigned char* key0,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:29:69: note: previously declared as an array 'const unsigned char[16]'
+   29 | void aes128_keyschedule_sfs(uint32_t rkeys[88], const unsigned char key0[16],
+      |                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:311:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  311 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:30:53: note: previously declared as an array 'const unsigned char[16]'
+   30 |                                 const unsigned char key1[16]);
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:377:39: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  377 | void aes256_keyschedule_sfs(uint32_t* rkeys, const unsigned char* key0,
+      |                             ~~~~~~~~~~^~~~~
+../Core/Src/Encrypt-Files/aes.h:31:38: note: previously declared as an array 'uint32_t[120]' {aka 'long unsigned int[120]'}
+   31 | void aes256_keyschedule_sfs(uint32_t rkeys[120], const unsigned char key0[32],
+      |                             ~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:377:67: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  377 | void aes256_keyschedule_sfs(uint32_t* rkeys, const unsigned char* key0,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:31:70: note: previously declared as an array 'const unsigned char[32]'
+   31 | void aes256_keyschedule_sfs(uint32_t rkeys[120], const unsigned char key0[32],
+      |                                                  ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:378:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  378 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Encrypt-Files/aes.h:32:53: note: previously declared as an array 'const unsigned char[32]'
+   32 |                                 const unsigned char key1[32]);
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule.c:73:13: warning: 'xor_columns_0' defined but not used [-Wunused-function]
+   73 | static void xor_columns_0(uint32_t* rkeys, int idx_xor, int idx_ror) {
+      |             ^~~~~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule_lut.c:66:43: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+   66 | void aes128_keyschedule_ffs_lut(uint32_t* rkeys_ffs, const unsigned char* key){
+      |                                 ~~~~~~~~~~^~~~~~~~~
+In file included from ../Core/Src/Encrypt-Files/aes_keyschedule_lut.c:13:
+../Core/Src/Encrypt-Files/aes.h:35:42: note: previously declared as an array 'uint32_t[88]' {aka 'long unsigned int[88]'}
+   35 | void aes128_keyschedule_ffs_lut(uint32_t rkeys[88],const unsigned char key[16]);
+      |                                 ~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule_lut.c:66:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+   66 | void aes128_keyschedule_ffs_lut(uint32_t* rkeys_ffs, const unsigned char* key){
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/Encrypt-Files/aes.h:35:72: note: previously declared as an array 'const unsigned char[16]'
+   35 | void aes128_keyschedule_ffs_lut(uint32_t rkeys[88],const unsigned char key[16]);
+      |                                                    ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule_lut.c:148:43: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  148 | void aes256_keyschedule_ffs_lut(uint32_t* rkeys_ffs, const unsigned char* key){
+      |                                 ~~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes.h:36:42: note: previously declared as an array 'uint32_t[120]' {aka 'long unsigned int[120]'}
+   36 | void aes256_keyschedule_ffs_lut(uint32_t rkeys[120], const unsigned char key[32]);
+      |                                 ~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule_lut.c:148:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  148 | void aes256_keyschedule_ffs_lut(uint32_t* rkeys_ffs, const unsigned char* key){
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/Encrypt-Files/aes.h:36:74: note: previously declared as an array 'const unsigned char[32]'
+   36 | void aes256_keyschedule_ffs_lut(uint32_t rkeys[120], const unsigned char key[32]);
+      |                                                      ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule_lut.c:250:43: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  250 | void aes128_keyschedule_sfs_lut(uint32_t* rkeys_sfs, const unsigned char* key){
+      |                                 ~~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes.h:39:42: note: previously declared as an array 'uint32_t[88]' {aka 'long unsigned int[88]'}
+   39 | void aes128_keyschedule_sfs_lut(uint32_t rkeys[88], const unsigned char key[16]);
+      |                                 ~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule_lut.c:250:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  250 | void aes128_keyschedule_sfs_lut(uint32_t* rkeys_sfs, const unsigned char* key){
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/Encrypt-Files/aes.h:39:73: note: previously declared as an array 'const unsigned char[16]'
+   39 | void aes128_keyschedule_sfs_lut(uint32_t rkeys[88], const unsigned char key[16]);
+      |                                                     ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule_lut.c:306:43: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  306 | void aes256_keyschedule_sfs_lut(uint32_t* rkeys_sfs, const unsigned char* key){
+      |                                 ~~~~~~~~~~^~~~~~~~~
+../Core/Src/Encrypt-Files/aes.h:40:42: note: previously declared as an array 'uint32_t[120]' {aka 'long unsigned int[120]'}
+   40 | void aes256_keyschedule_sfs_lut(uint32_t rkeys[120], const unsigned char key[32]);
+      |                                 ~~~~~~~~~^~~~~~~~~~
+../Core/Src/Encrypt-Files/aes_keyschedule_lut.c:306:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  306 | void aes256_keyschedule_sfs_lut(uint32_t* rkeys_sfs, const unsigned char* key){
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/Encrypt-Files/aes.h:40:74: note: previously declared as an array 'const unsigned char[32]'
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+   40 | void aes256_keyschedule_sfs_lut(uint32_t rkeys[120], const unsigned char key[32]);
+      |                                                      ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+../Core/Src/main.c:92:22: warning: 'key2' defined but not used [-Wunused-variable]
+   92 | static unsigned char key2[16]={0x00,0x01,0x02,0x03, 0x04,0x05,0x06,0x07 ,0x08,0x09,0x0a,0x0b ,0x0c,0x0d,0x0e,0x0f};
+      |                      ^~~~
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
+arm-none-eabi-gcc -o "OCB3-TEST.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/cinvestav/Documentos/trabajo_de_tesis/STM32/OCB-ELIMAC-AES-Fixlicing-STM32/OCB3-TEST/STM32F756ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OCB3-TEST.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: warning: OCB3-TEST.elf has a LOAD segment with RWX permissions
+Finished building target: OCB3-TEST.elf
+ 
 arm-none-eabi-size  OCB3-TEST.elf 
+arm-none-eabi-objdump -h -S OCB3-TEST.elf  > "OCB3-TEST.list"
    text	   data	    bss	    dec	    hex	filename
   17828	    452	  17548	  35828	   8bf4	OCB3-TEST.elf
 Finished building: default.size.stdout
  
+Finished building: OCB3-TEST.list
+ 
 
-14:36:47 Build Finished. 0 errors, 0 warnings. (took 290ms)
+17:22:17 Build Finished. 0 errors, 46 warnings. (took 1s.286ms)
 

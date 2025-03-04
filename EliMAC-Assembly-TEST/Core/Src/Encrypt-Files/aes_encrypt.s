@@ -763,7 +763,7 @@ six_Rounds_aes128_encrypt_ffs:
     bl      ark_sbox                // ark + sbox (round 5)
     bl      mixcolumns_1            // mixcolumns (round 5)
     bl      ark                		// ark + sbox (round 2)
-    bl      double_shiftrows        // to resynchronize with the classical rep
+    //bl      double_shiftrows        // to resynchronize with the classical rep
     bl      unpacking               // unpack the internal state
     ldrd    r0, r1, [sp, #56]       // restore the addr to store the ciphertext
     add.w   sp, #64                 // restore the stack pointer

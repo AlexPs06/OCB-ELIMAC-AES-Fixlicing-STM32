@@ -1,0 +1,220 @@
+#include <stdio.h>
+#include <string.h>
+//#include "aes.h"
+#include "internal-aes.h"
+
+#define key_size 16
+#define bit_size 16
+
+void print_array(uint8_t * plaintext, uint8_t size);
+
+
+void divide_key(unsigned char* key, unsigned char * key0, unsigned char * key1);
+void divide_plaintext(unsigned char* plaintext, unsigned char* ptext0,  unsigned char* ptext1,unsigned int plaintext_size);
+void add_nonce(unsigned int * add_nonce, unsigned int * nonce, unsigned int * nonce_result, unsigned int size);
+void xor_nonce(unsigned char * plaintext, unsigned char * nonce, unsigned int size);
+void ELIMAC(unsigned char* plaintext,  unsigned char plaintext_size, unsigned char* key1, unsigned char* key2, unsigned char rounds, unsigned char* tag);
+void H(unsigned char* ptext0,  unsigned char *ptext1, uint32_t* rkeys_ffs_H, unsigned char rounds);
+void I(unsigned char* ptext0,  unsigned char *ptext1, uint32_t* rkeys_ffs_H, unsigned char rounds);
+
+extern void aes128_keyschedule_ffs(uint32_t* rkeys, const uint8_t* key);
+extern void aes128_keyschedule_ffs_lut(uint32_t* rkeys, const uint8_t* key);
+extern void aes128_encrypt_ffs(uint8_t* ctext, uint8_t* ctext_bis, const uint8_t* ptext, const uint8_t* ptext_bis, const uint32_t* rkey);
+extern void two_Rounds_aes128_encrypt_ffs(uint8_t* ctext, uint8_t* ctext_bis, const uint8_t* ptext, const uint8_t* ptext_bis, const uint32_t* rkey);
+extern void four_Rounds_aes128_encrypt_ffs(uint8_t* ctext, uint8_t* ctext_bis, const uint8_t* ptext, const uint8_t* ptext_bis, const uint32_t* rkey);
+extern void six_Rounds_aes128_encrypt_ffs(uint8_t* ctext, uint8_t* ctext_bis, const uint8_t* ptext, const uint8_t* ptext_bis, const uint32_t* rkey);
+extern void eigth_Rounds_aes128_encrypt_ffs(uint8_t* ctext, uint8_t* ctext_bis, const uint8_t* ptext, const uint8_t* ptext_bis, const uint32_t* rkey);
+
+
+void ELIMAC(unsigned char* plaintext,  const unsigned char plaintext_size, unsigned char* key1, unsigned char* key2, unsigned char rounds, unsigned char* tag){
+
+    unsigned char ptext0[plaintext_size];
+    unsigned char ptext1[plaintext_size];
+
+    unsigned char i_n1[16] = {0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0};
+    unsigned char i_n2[16] = {0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0};
+    unsigned char i_n1_t[16] = {0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0};
+    unsigned char i_n2_t[16] = {0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0};
+    unsigned char S1[bit_size];
+    unsigned char S2[bit_size];
+
+    unsigned int add_nonce_0[4] = {0,0,0,0};
+    unsigned int add_nonce_1[4] = {1,1,1,1};
+    unsigned int add_nonce_2[4] = {2,2,2,2};
+
+    uint32_t rkeys_ffs[88];
+    uint32_t rkeys_ffs_H[88];
+
+    for (size_t i = 0; i < plaintext_size; i++)
+    {
+        ptext1[i]=0;
+        ptext0[i]=0;
+    }
+
+    divide_plaintext(plaintext, ptext0, ptext1, plaintext_size);
+
+    for (size_t i = 0; i < bit_size; i++)
+    {
+        S1[i]=0;
+        S2[i]=0;
+    }
+
+    aes128_keyschedule_ffs(rkeys_ffs_H, key1);
+    aes128_keyschedule_ffs(rkeys_ffs, key2);
+
+    int block_size = plaintext_size/32;
+
+
+
+    two_Rounds_aes128_encrypt_ffs(tag, tag+16, ptext0, ptext1, rkeys_ffs_H);
+
+    //memmove(tag, temp, sizeof(unsigned char));
+
+
+    /*tag[1]=temp[9];
+    tag[5]=temp[13];
+    tag[9]=temp[1];
+    tag[13]=temp[5];*/
+
+    //four_Rounds_aes128_encrypt_ffs(tag, tag+16, ptext0, ptext1, rkeys_ffs_H);
+    /*
+    for (int i = 0; i < block_size; i++){
+
+        add_nonce(add_nonce_0, (unsigned int *)i_n1,(unsigned int *)i_n1_t, 4);
+        add_nonce(add_nonce_1, (unsigned int *)i_n2,(unsigned int *)i_n2_t, 4);
+
+        H(i_n1_t, i_n2_t, rkeys_ffs_H, rounds);
+
+        xor_nonce( ptext0+ (i*16), i_n1_t, 16);
+        xor_nonce( ptext1+ (i*16), i_n2_t, 16);
+
+        I(ptext0,  ptext1, rkeys_ffs, 4);
+
+        xor_nonce( S1,ptext0+ (i*16), 16);
+        xor_nonce( S2,ptext1+ (i*16), 16);
+
+        add_nonce(add_nonce_2, add_nonce_0,add_nonce_0, 4);
+        add_nonce(add_nonce_2, add_nonce_1,add_nonce_1, 4);
+
+    }
+    //print_array(S1,16);
+    //print_array(S2,16);
+    xor_nonce( S1,S2, 16);
+
+
+    aes128_encrypt_ffs(tag, S2, S1,S1, rkeys_ffs);*/
+
+}
+
+void H(unsigned char* ptext0,  unsigned char *ptext1, uint32_t *rkeys_ffs_H, unsigned char rounds){
+	 unsigned char temp_0[16]={0};
+	 unsigned char temp_1[16]={0};
+	 //exclusive only if use 2 or 6 rounds
+	 unsigned char shift_0[16]={0,9,2,11,4,13,6,7,8,1,10,3,12,5,14,15};
+	 unsigned char shift_1[16]={0,9,2,11,4,13,6,15,8,1,10,3,12,5,14,7};
+
+
+
+
+
+    switch (rounds)
+    {
+    case 2:
+
+        two_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        memcpy(shift_0, ptext0, sizeof(unsigned char)*16);
+        memcpy(shift_1, ptext1, sizeof(unsigned char)*16);
+        for (size_t i = 0; i < 16; ++i) {
+        	tag[i]=temp[shift[i]];
+        }
+        break;
+    case 4:
+        four_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        break;
+    case 6:
+        six_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        break;
+    case 8:
+        eigth_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        break;
+
+    default:
+        break;
+    }
+
+}
+
+void I(unsigned char* ptext0,  unsigned char *ptext1, uint32_t *rkeys_ffs_H, unsigned char rounds){
+
+    switch (rounds)
+    {
+    case 2:
+        two_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        break;
+    case 4:
+        four_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        break;
+    case 6:
+        six_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        break;
+    case 8:
+        eigth_Rounds_aes128_encrypt_ffs(ptext0, ptext1, ptext0, ptext1, rkeys_ffs_H);
+        break;
+
+    default:
+        break;
+    }
+
+}
+
+void add_nonce(unsigned int * add_nonce, unsigned int * nonce, unsigned int * nonce_result, unsigned int size){
+    for (size_t i = 0; i < size; i++){
+        nonce_result[i]=nonce[i]+ add_nonce[i];
+    }
+
+}
+
+void xor_nonce(unsigned char * plaintext, unsigned char * nonce, unsigned int size){
+    for (size_t i = 0; i < size; i++){
+        plaintext[i]=nonce[i]^ plaintext[i];
+    }
+
+}
+void divide_plaintext(unsigned char* plaintext, unsigned char* ptext0,  unsigned char* ptext1,unsigned int plaintext_size){
+    int condicion = 1;
+    size_t j=0;
+    size_t k=0;
+    for (size_t i = 0; i < plaintext_size; i++){
+
+        if (i%16==0 && i!=0)
+            condicion=condicion^1;
+
+        if (condicion)
+            ptext0[j] = plaintext[i];
+        else
+            ptext1[k] = plaintext[i];
+
+        if (condicion)
+            j++;
+        else
+            k++;
+    }
+}
+
+
+
+void divide_key(unsigned char* key, unsigned char * key0, unsigned char * key1){
+
+    for (size_t i = 0; i < key_size; i++){
+        key0[i] = key[i];
+        key1[i] = key[i];
+    }
+}
+
+
+void print_array(uint8_t * plaintext, uint8_t size){
+    for (size_t i = 0; i < size; i++){
+        printf("%02x ", plaintext[i]);
+    }
+    printf("\n");
+}

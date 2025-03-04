@@ -1,0 +1,10 @@
+17:41:47 **** Incremental Build of configuration Release for project OCBRA2-Assembly-TEST ****
+make -j8 all 
+arm-none-eabi-size  OCBRA2-Assembly-TEST.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22720	    452	  17292	  40464	   9e10	OCBRA2-Assembly-TEST.elf
+Finished building: default.size.stdout
+ 
+
+17:41:47 Build Finished. 0 errors, 0 warnings. (took 282ms)
+

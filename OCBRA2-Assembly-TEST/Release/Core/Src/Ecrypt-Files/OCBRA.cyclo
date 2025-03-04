@@ -1,0 +1,11 @@
+../Core/Src/Ecrypt-Files/OCBRA.c:307:6:add_nonce	2
+../Core/Src/Ecrypt-Files/OCBRA.c:314:6:xor_nonce	2
+../Core/Src/Ecrypt-Files/OCBRA.c:320:6:divide_plaintext	5
+../Core/Src/Ecrypt-Files/OCBRA.c:342:6:union_ciphertext	5
+../Core/Src/Ecrypt-Files/OCBRA.c:371:6:divide_key	2
+../Core/Src/Ecrypt-Files/OCBRA.c:380:6:print_array	5
+../Core/Src/Ecrypt-Files/OCBRA.c:402:6:H	13
+../Core/Src/Ecrypt-Files/OCBRA.c:147:6:PMAC	9
+../Core/Src/Ecrypt-Files/OCBRA.c:31:6:OCB	7
+../Core/Src/Ecrypt-Files/OCBRA.c:226:6:PMAC_1	11
+../Core/Src/Ecrypt-Files/OCBRA.c:444:6:ELIMAC	6

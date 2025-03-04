@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EliMAC-Assembly-TEST/Core/Src/Encrypt-Files/aes_keyschedule.s&apos; to &apos;aes_keyschedule.S&apos;" description="Rename resource &apos;aes_keyschedule.s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/Encrypt-Files/aes_keyschedule.s" name="aes_keyschedule.S" stamp="1740698752846" updateReferences="true"/>
+</session>

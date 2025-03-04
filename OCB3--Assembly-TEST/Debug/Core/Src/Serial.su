@@ -1,0 +1,2 @@
+../Core/Src/Serial.c:10:6:serial_printf	32	static
+../Core/Src/Serial.c:18:6:serial_scanf	80	static

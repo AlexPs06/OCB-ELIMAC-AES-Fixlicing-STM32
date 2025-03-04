@@ -1,10 +1,286 @@
-14:39:53 **** Incremental Build of configuration Release for project OCBRA2-TEST ****
+17:22:17 **** Incremental Build of configuration Release for project OCBRA2-TEST ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/Ecrypt-Files/OCBRA.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Ecrypt-Files/OCBRA.d" -MT"Core/Src/Ecrypt-Files/OCBRA.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Ecrypt-Files/OCBRA.o"
+arm-none-eabi-gcc "../Core/Src/Ecrypt-Files/aes_encrypt.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Ecrypt-Files/aes_encrypt.d" -MT"Core/Src/Ecrypt-Files/aes_encrypt.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Ecrypt-Files/aes_encrypt.o"
+arm-none-eabi-gcc "../Core/Src/Ecrypt-Files/aes_keyschedule.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Ecrypt-Files/aes_keyschedule.d" -MT"Core/Src/Ecrypt-Files/aes_keyschedule.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Ecrypt-Files/aes_keyschedule.o"
+arm-none-eabi-gcc "../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Ecrypt-Files/aes_keyschedule_lut.d" -MT"Core/Src/Ecrypt-Files/aes_keyschedule_lut.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Ecrypt-Files/aes_keyschedule_lut.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c:66:43: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+   66 | void aes128_keyschedule_ffs_lut(uint32_t* rkeys_ffs, const unsigned char* key){
+      |                                 ~~~~~~~~~~^~~~~~~~~
+In file included from ../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c:13:
+../Core/Src/Ecrypt-Files/aes.h:35:42: note: previously declared as an array 'uint32_t[88]' {aka 'long unsigned int[88]'}
+   35 | void aes128_keyschedule_ffs_lut(uint32_t rkeys[88],const unsigned char key[16]);
+      |                                 ~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c:66:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+   66 | void aes128_keyschedule_ffs_lut(uint32_t* rkeys_ffs, const unsigned char* key){
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/Ecrypt-Files/aes.h:35:72: note: previously declared as an array 'const unsigned char[16]'
+   35 | void aes128_keyschedule_ffs_lut(uint32_t rkeys[88],const unsigned char key[16]);
+      |                                                    ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c:148:43: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  148 | void aes256_keyschedule_ffs_lut(uint32_t* rkeys_ffs, const unsigned char* key){
+      |                                 ~~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes.h:36:42: note: previously declared as an array 'uint32_t[120]' {aka 'long unsigned int[120]'}
+   36 | void aes256_keyschedule_ffs_lut(uint32_t rkeys[120], const unsigned char key[32]);
+      |                                 ~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c:148:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  148 | void aes256_keyschedule_ffs_lut(uint32_t* rkeys_ffs, const unsigned char* key){
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/Ecrypt-Files/aes.h:36:74: note: previously declared as an array 'const unsigned char[32]'
+   36 | void aes256_keyschedule_ffs_lut(uint32_t rkeys[120], const unsigned char key[32]);
+      |                                                      ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c:250:43: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  250 | void aes128_keyschedule_sfs_lut(uint32_t* rkeys_sfs, const unsigned char* key){
+      |                                 ~~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes.h:39:42: note: previously declared as an array 'uint32_t[88]' {aka 'long unsigned int[88]'}
+   39 | void aes128_keyschedule_sfs_lut(uint32_t rkeys[88], const unsigned char key[16]);
+      |                                 ~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c:250:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  250 | void aes128_keyschedule_sfs_lut(uint32_t* rkeys_sfs, const unsigned char* key){
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/Ecrypt-Files/aes.h:39:73: note: previously declared as an array 'const unsigned char[16]'
+   39 | void aes128_keyschedule_sfs_lut(uint32_t rkeys[88], const unsigned char key[16]);
+      |                                                     ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c:306:43: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  306 | void aes256_keyschedule_sfs_lut(uint32_t* rkeys_sfs, const unsigned char* key){
+      |                                 ~~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes.h:40:42: note: previously declared as an array 'uint32_t[120]' {aka 'long unsigned int[120]'}
+   40 | void aes256_keyschedule_sfs_lut(uint32_t rkeys[120], const unsigned char key[32]);
+      |                                 ~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule_lut.c:306:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  306 | void aes256_keyschedule_sfs_lut(uint32_t* rkeys_sfs, const unsigned char* key){
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~
+../Core/Src/Ecrypt-Files/aes.h:40:74: note: previously declared as an array 'const unsigned char[32]'
+   40 | void aes256_keyschedule_sfs_lut(uint32_t rkeys[120], const unsigned char key[32]);
+      |                                                      ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:90:39: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+   90 | void aes128_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                             ~~~~~~~~~~^~~~~
+In file included from ../Core/Src/Ecrypt-Files/aes_keyschedule.c:14:
+../Core/Src/Ecrypt-Files/aes.h:23:38: note: previously declared as an array 'uint32_t[88]' {aka 'long unsigned int[88]'}
+   23 | void aes128_keyschedule_ffs(uint32_t rkeys[88], const unsigned char key0[16],
+      |                             ~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:90:67: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+   90 | void aes128_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:23:69: note: previously declared as an array 'const unsigned char[16]'
+   23 | void aes128_keyschedule_ffs(uint32_t rkeys[88], const unsigned char key0[16],
+      |                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:91:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+   91 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:24:53: note: previously declared as an array 'const unsigned char[16]'
+   24 |                                 const unsigned char key1[16]);
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:166:47: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  166 | void aes128_2rounds_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                                     ~~~~~~~~~~^~~~~
+../Core/Src/Ecrypt-Files/aes.h:53:46: note: previously declared as an array 'uint32_t[64]' {aka 'long unsigned int[64]'}
+   53 | void aes128_2rounds_keyschedule_ffs(uint32_t rkeys[64], const unsigned char key0[32],
+      |                                     ~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:166:75: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  166 | void aes128_2rounds_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:53:77: note: previously declared as an array 'const unsigned char[32]'
+   53 | void aes128_2rounds_keyschedule_ffs(uint32_t rkeys[64], const unsigned char key0[32],
+      |                                                         ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:167:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  167 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:54:69: note: previously declared as an array 'const unsigned char[32]'
+   54 |                                                 const unsigned char key1[32]);
+      |                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:236:39: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  236 | void aes256_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                             ~~~~~~~~~~^~~~~
+../Core/Src/Ecrypt-Files/aes.h:25:38: note: previously declared as an array 'uint32_t[120]' {aka 'long unsigned int[120]'}
+   25 | void aes256_keyschedule_ffs(uint32_t rkeys[120], const unsigned char key0[32],
+      |                             ~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:236:67: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  236 | void aes256_keyschedule_ffs(uint32_t* rkeys, const unsigned char* key0,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:25:70: note: previously declared as an array 'const unsigned char[32]'
+   25 | void aes256_keyschedule_ffs(uint32_t rkeys[120], const unsigned char key0[32],
+      |                                                  ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:237:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  237 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:26:53: note: previously declared as an array 'const unsigned char[32]'
+   26 |                                 const unsigned char key1[32]);
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:309:39: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  309 | void aes128_keyschedule_sfs(uint32_t* rkeys, const unsigned char* key0,
+      |                             ~~~~~~~~~~^~~~~
+../Core/Src/Ecrypt-Files/aes.h:29:38: note: previously declared as an array 'uint32_t[88]' {aka 'long unsigned int[88]'}
+   29 | void aes128_keyschedule_sfs(uint32_t rkeys[88], const unsigned char key0[16],
+      |                             ~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:309:67: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  309 | void aes128_keyschedule_sfs(uint32_t* rkeys, const unsigned char* key0,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:29:69: note: previously declared as an array 'const unsigned char[16]'
+   29 | void aes128_keyschedule_sfs(uint32_t rkeys[88], const unsigned char key0[16],
+      |                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:310:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  310 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:30:53: note: previously declared as an array 'const unsigned char[16]'
+   30 |                                 const unsigned char key1[16]);
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:376:39: warning: argument 1 of type 'uint32_t *' {aka 'long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  376 | void aes256_keyschedule_sfs(uint32_t* rkeys, const unsigned char* key0,
+      |                             ~~~~~~~~~~^~~~~
+../Core/Src/Ecrypt-Files/aes.h:31:38: note: previously declared as an array 'uint32_t[120]' {aka 'long unsigned int[120]'}
+   31 | void aes256_keyschedule_sfs(uint32_t rkeys[120], const unsigned char key0[32],
+      |                             ~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:376:67: warning: argument 2 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  376 | void aes256_keyschedule_sfs(uint32_t* rkeys, const unsigned char* key0,
+      |                                              ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:31:70: note: previously declared as an array 'const unsigned char[32]'
+   31 | void aes256_keyschedule_sfs(uint32_t rkeys[120], const unsigned char key0[32],
+      |                                                  ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:377:70: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  377 |                                                 const unsigned char* key1) {
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/Ecrypt-Files/aes.h:32:53: note: previously declared as an array 'const unsigned char[32]'
+   32 |                                 const unsigned char key1[32]);
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:389:40: warning: argument 1 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  389 | void aes128_encrypt_ffs(unsigned char* ctext0, unsigned char * ctext1,
+      |                         ~~~~~~~~~~~~~~~^~~~~~
+In file included from ../Core/Src/Ecrypt-Files/aes_encrypt.c:13:
+../Core/Src/Ecrypt-Files/aes.h:7:39: note: previously declared as an array 'unsigned char[16]'
+    7 | void aes128_encrypt_ffs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                         ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:389:64: warning: argument 2 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  389 | void aes128_encrypt_ffs(unsigned char* ctext0, unsigned char * ctext1,
+      |                                                ~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:7:65: note: previously declared as an array 'unsigned char[16]'
+    7 | void aes128_encrypt_ffs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                                                   ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:390:62: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  390 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:8:53: note: previously declared as an array 'const unsigned char[16]'
+    8 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:390:91: warning: argument 4 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  390 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:8:85: note: previously declared as an array 'const unsigned char[16]'
+    8 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:391:57: warning: argument 5 of type 'const uint32_t *' {aka 'const long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  391 |                                         const uint32_t* rkeys_ffs) {
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes.h:9:48: note: previously declared as an array 'const uint32_t[88]' {aka 'const long unsigned int[88]'}
+    9 |                                 const uint32_t rkeys[88]);
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:436:40: warning: argument 1 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  436 | void aes256_encrypt_ffs(unsigned char* ctext0, unsigned char * ctext1,
+      |                         ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:10:39: note: previously declared as an array 'unsigned char[16]'
+   10 | void aes256_encrypt_ffs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                         ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:436:64: warning: argument 2 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  436 | void aes256_encrypt_ffs(unsigned char* ctext0, unsigned char * ctext1,
+      |                                                ~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:10:65: note: previously declared as an array 'unsigned char[16]'
+   10 | void aes256_encrypt_ffs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                                                   ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:437:62: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  437 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:11:53: note: previously declared as an array 'const unsigned char[16]'
+   11 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:437:91: warning: argument 4 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  437 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:11:85: note: previously declared as an array 'const unsigned char[16]'
+   11 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:438:57: warning: argument 5 of type 'const uint32_t *' {aka 'const long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  438 |                                         const uint32_t* rkeys_ffs) {
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes.h:12:48: note: previously declared as an array 'const uint32_t[120]' {aka 'const long unsigned int[120]'}
+   12 |                                 const uint32_t rkeys[120]);
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:473:40: warning: argument 1 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  473 | void aes128_encrypt_sfs(unsigned char* ctext0, unsigned char* ctext1,
+      |                         ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:15:39: note: previously declared as an array 'unsigned char[16]'
+   15 | void aes128_encrypt_sfs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                         ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:473:63: warning: argument 2 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  473 | void aes128_encrypt_sfs(unsigned char* ctext0, unsigned char* ctext1,
+      |                                                ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:15:65: note: previously declared as an array 'unsigned char[16]'
+   15 | void aes128_encrypt_sfs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                                                   ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:474:62: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  474 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:16:53: note: previously declared as an array 'const unsigned char[16]'
+   16 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:474:91: warning: argument 4 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  474 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:16:85: note: previously declared as an array 'const unsigned char[16]'
+   16 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:475:57: warning: argument 5 of type 'const uint32_t *' {aka 'const long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  475 |                                         const uint32_t* rkeys_sfs) {
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes.h:17:48: note: previously declared as an array 'const uint32_t[88]' {aka 'const long unsigned int[88]'}
+   17 |                                 const uint32_t rkeys[88]);
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_keyschedule.c:72:13: warning: 'xor_columns_0' defined but not used [-Wunused-function]
+   72 | static void xor_columns_0(uint32_t* rkeys, int idx_xor, int idx_ror) {
+      |             ^~~~~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:500:40: warning: argument 1 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  500 | void aes256_encrypt_sfs(unsigned char* ctext0, unsigned char* ctext1,
+      |                         ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:18:39: note: previously declared as an array 'unsigned char[16]'
+   18 | void aes256_encrypt_sfs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                         ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:500:63: warning: argument 2 of type 'unsigned char *' declared as a pointer [-Warray-parameter=]
+  500 | void aes256_encrypt_sfs(unsigned char* ctext0, unsigned char* ctext1,
+      |                                                ~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:18:65: note: previously declared as an array 'unsigned char[16]'
+   18 | void aes256_encrypt_sfs(unsigned char ctext0[16], unsigned char ctext1[16],
+      |                                                   ~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:501:62: warning: argument 3 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  501 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:19:53: note: previously declared as an array 'const unsigned char[16]'
+   19 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:501:91: warning: argument 4 of type 'const unsigned char *' declared as a pointer [-Warray-parameter=]
+  501 |                                         const unsigned char* ptext0, const unsigned char* ptext1,
+      |                                                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../Core/Src/Ecrypt-Files/aes.h:19:85: note: previously declared as an array 'const unsigned char[16]'
+   19 |                                 const unsigned char ptext0[16], const unsigned char ptext1[16],
+      |                                                                 ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/Ecrypt-Files/aes_encrypt.c:502:57: warning: argument 5 of type 'const uint32_t *' {aka 'const long unsigned int *'} declared as a pointer [-Warray-parameter=]
+  502 |                                         const uint32_t* rkeys_sfs) {
+      |                                         ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Core/Src/Ecrypt-Files/aes.h:20:48: note: previously declared as an array 'const uint32_t[120]' {aka 'const long unsigned int[120]'}
+   20 |                                 const uint32_t rkeys[120]);
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
+arm-none-eabi-gcc -o "OCBRA2-TEST.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/cinvestav/Documentos/trabajo_de_tesis/STM32/OCB-ELIMAC-AES-Fixlicing-STM32/OCBRA2-TEST/STM32F756ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OCBRA2-TEST.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: warning: OCBRA2-TEST.elf has a LOAD segment with RWX permissions
+Finished building target: OCBRA2-TEST.elf
+ 
 arm-none-eabi-size  OCBRA2-TEST.elf 
+arm-none-eabi-objdump -h -S OCBRA2-TEST.elf  > "OCBRA2-TEST.list"
    text	   data	    bss	    dec	    hex	filename
   19032	    452	  17292	  36776	   8fa8	OCBRA2-TEST.elf
 Finished building: default.size.stdout
  
+Finished building: OCBRA2-TEST.list
+ 
 
-14:39:54 Build Finished. 0 errors, 0 warnings. (took 290ms)
+17:22:18 Build Finished. 0 errors, 45 warnings. (took 535ms)
 

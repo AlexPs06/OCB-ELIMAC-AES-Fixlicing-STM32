@@ -1,0 +1,7 @@
+../Core/Src/main.c:102:6:DWT_Init	0	static
+../Core/Src/main.c:110:6:start_timer	0	static
+../Core/Src/main.c:114:10:stop_timer	0	static
+../Core/Src/main.c:118:6:print_array_2	32	static
+../Core/Src/main.c:327:6:SystemClock_Config	88	static,ignoring_inline_asm
+../Core/Src/main.c:135:5:main	120	static,ignoring_inline_asm
+../Core/Src/main.c:554:6:Error_Handler	0	static,ignoring_inline_asm

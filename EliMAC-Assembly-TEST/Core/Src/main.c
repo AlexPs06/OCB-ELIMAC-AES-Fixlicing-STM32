@@ -33,7 +33,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define plaintext_size 32
+#define plaintext_size 4096
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -91,11 +91,11 @@ static void MX_USB_OTG_FS_PCD_Init(void);
 static unsigned char key1[16]={0x00,0x01,0x02,0x03, 0x04,0x05,0x06,0x07 ,0x08,0x09,0x0a,0x0b ,0x0c,0x0d,0x0e,0x0f};
 static unsigned char key2[16]={0x00,0x01,0x02,0x03, 0x04,0x05,0x06,0x07 ,0x08,0x09,0x0a,0x0b ,0x0c,0x0d,0x0e,0x0f};
 static unsigned char nonce[16]={0x00,0x01,0x02,0x03, 0x04,0x05,0x06,0x07 ,0x08,0x09,0x0a,0x0b ,0x0c,0x0d,0x0e,0x0f};
-static unsigned char tag[32]={0,0,0,0, 0,0,0,0 ,0,0,0,0 ,0,0,0,0};
+static unsigned char tag[16]={0,0,0,0, 0,0,0,0 ,0,0,0,0 ,0,0,0,0};
 static unsigned char plaintext[plaintext_size];
 static unsigned char ciphertext[plaintext_size];
 static unsigned char asociated_data[plaintext_size];
-static unsigned int bytes[7] = {32, 64, 128, 192, 256, 320, 512};
+static unsigned int bytes[8] = {32, 64, 128, 192, 256, 320, 512,1024};
 
 char buffer [1024];
 unsigned int performance[REP];
@@ -163,7 +163,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
 
-    for (size_t i = 0; i < plaintext_size; i++){
+    for (uint32_t i = 0; i < plaintext_size; i++){
   	  plaintext[i] =i;
   	  asociated_data[i]=i;
     }
@@ -185,31 +185,27 @@ int main(void)
     int i=0;
 
 
-    cycles=0;
-    total_cycles=0;
-    sprintf(buffer,"\n ELIMAC ROUNDS %i", ROUNDS+4);
-        serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
-        for (int j = 0; j < Number_test; j++) {
-            for (i = 0; i < REP; i++) {
-                start_timer(); // Iniciar el contador de ciclos
-                ELIMAC(plaintext, bytes[j], key1, key2, ROUNDS, tag);
-                cycles = stop_timer(); // Detener el contador de ciclos y obtener el valor
-                total_cycles=cycles+total_cycles;
-            }
-            performance[j] = total_cycles/REP;
-            total_cycles=0;
-        }
-        for (i = 0; i < Number_test; i++) {
-      	    sprintf(buffer,"\n bytes %u ", bytes[i]);
-      	    serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
-  			sprintf(buffer, "\n %d:   cycle : %u  ", i, performance[i] );
-  			serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
-  	   }
-
-        for (size_t i = 0; i < plaintext_size; i++){
-      	   plaintext[i] =i;
-      	   asociated_data[i]=i;
-         }
+    i=0;
+	cycles=0;
+	total_cycles=0;
+	sprintf(buffer,"\n ELIMAC 12");
+		serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
+		for (int j = 0; j < Number_test; j++) {
+			for (i = 0; i < REP; i++) {
+				start_timer(); // Iniciar el contador de ciclos
+				ELIMAC(plaintext, bytes[j], key1, key1, 8, tag);
+				cycles = stop_timer(); // Detener el contador de ciclos y obtener el valor
+				total_cycles=cycles+total_cycles;
+			}
+			performance[j] = total_cycles/REP;
+			total_cycles=0;
+		}
+	  for (i = 0; i < Number_test; i++) {
+			sprintf(buffer,"\n bytes %u ", bytes[i]);
+			serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
+			sprintf(buffer, "\n %d:   cycle : %u  ", i, performance[i] );
+			serial_printf(&huart3, (uint8_t *) buffer, HAL_MAX_DELAY);
+	   }
 
 
   /* USER CODE END 2 */

@@ -1,0 +1,11 @@
+../Core/Src/main.c:102:6:DWT_Init	4	static
+../Core/Src/main.c:110:6:start_timer	4	static
+../Core/Src/main.c:114:10:stop_timer	4	static
+../Core/Src/main.c:118:6:print_array_2	24	static
+../Core/Src/main.c:135:5:main	72	static
+../Core/Src/main.c:306:6:SystemClock_Config	88	static
+../Core/Src/main.c:356:13:MX_ETH_Init	8	static
+../Core/Src/main.c:405:13:MX_USART3_UART_Init	8	static
+../Core/Src/main.c:440:13:MX_USB_OTG_FS_PCD_Init	8	static
+../Core/Src/main.c:475:13:MX_GPIO_Init	56	static
+../Core/Src/main.c:533:6:Error_Handler	4	static,ignoring_inline_asm

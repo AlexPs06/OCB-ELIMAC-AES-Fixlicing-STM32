@@ -1,0 +1,10 @@
+../Core/Src/Encrypt-Files/OCB3.c:15:6:OCB3_INIT	2
+../Core/Src/Encrypt-Files/OCB3.c:39:6:array_copy	2
+../Core/Src/Encrypt-Files/OCB3.c:45:6:mult_by_2	2
+../Core/Src/Encrypt-Files/OCB3.c:59:6:xor_block_u8	2
+../Core/Src/Encrypt-Files/OCB3.c:66:6:u8_to_u32	3
+../Core/Src/Encrypt-Files/OCB3.c:77:24:ntz	1
+../Core/Src/Encrypt-Files/OCB3.c:84:6:OCB3	9
+../Core/Src/Encrypt-Files/OCB3.c:190:6:PMAC_OCB3	8
+../Core/Src/Encrypt-Files/OCB3.c:279:6:divide_plaintext	6
+../Core/Src/Encrypt-Files/OCB3.c:301:6:union_ciphertext	6

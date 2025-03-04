@@ -1,0 +1,27 @@
+17:36:12 **** Incremental Build of configuration Debug for project EliMAC-Assembly-TEST ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/Encrypt-Files/EliMAC.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Encrypt-Files/EliMAC.d" -MT"Core/Src/Encrypt-Files/EliMAC.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Encrypt-Files/EliMAC.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F756xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:96:22: warning: 'ciphertext' defined but not used [-Wunused-variable]
+   96 | static unsigned char ciphertext[plaintext_size];
+      |                      ^~~~~~~~~~
+../Core/Src/main.c:93:22: warning: 'nonce' defined but not used [-Wunused-variable]
+   93 | static unsigned char nonce[16]={0x00,0x01,0x02,0x03, 0x04,0x05,0x06,0x07 ,0x08,0x09,0x0a,0x0b ,0x0c,0x0d,0x0e,0x0f};
+      |                      ^~~~~
+../Core/Src/main.c:92:22: warning: 'key2' defined but not used [-Wunused-variable]
+   92 | static unsigned char key2[16]={0x00,0x01,0x02,0x03, 0x04,0x05,0x06,0x07 ,0x08,0x09,0x0a,0x0b ,0x0c,0x0d,0x0e,0x0f};
+      |                      ^~~~
+arm-none-eabi-gcc -o "EliMAC-Assembly-TEST.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/cinvestav/Documentos/Articulo Embeddes system letters/OCB-ELIMAC-AES-Fixlicing-STM32/EliMAC-Assembly-TEST/STM32F756ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EliMAC-Assembly-TEST.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: EliMAC-Assembly-TEST.elf
+ 
+arm-none-eabi-size  EliMAC-Assembly-TEST.elf 
+arm-none-eabi-objdump -h -S EliMAC-Assembly-TEST.elf  > "EliMAC-Assembly-TEST.list"
+   text	   data	    bss	    dec	    hex	filename
+  27596	    460	  12876	  40932	   9fe4	EliMAC-Assembly-TEST.elf
+Finished building: default.size.stdout
+ 
+Finished building: EliMAC-Assembly-TEST.list
+ 
+
+17:36:13 Build Finished. 0 errors, 3 warnings. (took 633ms)
+
